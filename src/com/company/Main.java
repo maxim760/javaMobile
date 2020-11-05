@@ -3,17 +3,14 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Car bmw = new Car();
-//        bmw.doMove();
-        bmw.power= 500;
-        bmw.name = "BMW";
-        bmw.setRuntime(120);
-//        System.out.println(bmw.getRuntime());
+        Film nameOfFilm = new Film(1998,"Название","Драма");
+        nameOfFilm.info();
+        nameOfFilm.setGenre("Детектив");
+        nameOfFilm.getGenre();
 
-        ECar tesla = new ECar("tesla",200,13,122,100);
-//        tesla.doMove();
-        tesla.doFuel(22);
-        System.out.println(tesla);
-        // changed
+        Multfilm mult = new Multfilm("CША",2015,"Мультик", "Мультфильмы");
+        mult.info();
+        mult.info(2020);
+
     }
 }
